@@ -44,10 +44,10 @@ const Portfolio = () => {
       emoji: <TbHexagon3D />,
       tech: ["React", "Redux", "Tailwind", "NestJS", "BigQuery", "JWT", "GCP"],
       images: [
-        "/image/web-eng-1.png",
-        "/image/web-eng-2.png",
-        "/image/web-eng-3.png",
-        "/image/web-eng-4.png",
+        // "/image/web-eng-1.png",
+        // "/image/web-eng-2.png",
+        // "/image/web-eng-3.png",
+        // "/image/web-eng-4.png",
       ],
     },
     {
@@ -58,10 +58,10 @@ const Portfolio = () => {
       emoji: <SiFigma />,
       tech: ["Figma"],
       images: [
-        "/image/uxui-1.png",
-        "/image/uxui-2.png",
-        "/image/uxui-3.png",
-        "/image/uxui-4.png",
+        // "/image/uxui-1.png",
+        // "/image/uxui-2.png",
+        // "/image/uxui-3.png",
+        // "/image/uxui-4.png",
       ],
     },
     {
