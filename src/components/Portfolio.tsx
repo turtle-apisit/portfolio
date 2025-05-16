@@ -2,8 +2,8 @@
 import { useState, type JSX } from "react";
 
 import { FaReact, FaRobot } from "react-icons/fa6";
-import {
 
+import {
   SiExpress,
   SiFigma,
   SiGooglebigquery,
@@ -16,6 +16,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { TbHexagon3D } from "react-icons/tb";
+import Lightbox from "./Lightbox";
 
 const iconMap: Record<string, JSX.Element> = {
   React: <FaReact className="text-blue-500 w-4 h-4 shrink-0" title="React" />,
@@ -82,23 +83,7 @@ const Portfolio = () => {
     setLightboxIndex({ images, index });
   };
 
-  const nextImage = () => {
-    if (lightboxIndex) {
-      setLightboxIndex({
-        ...lightboxIndex,
-        index: (lightboxIndex.index + 1) % lightboxIndex.images.length,
-      });
-    }
-  };
-
-  const prevImage = () => {
-    if (lightboxIndex) {
-      setLightboxIndex({
-        ...lightboxIndex,
-        index: (lightboxIndex.index - 1 + lightboxIndex.images.length) % lightboxIndex.images.length,
-      });
-    }
-  };
+  
 
   return (
     <section id="portfolio" className="py-28 px-6 bg-white text-center text-black">
@@ -154,16 +139,12 @@ const Portfolio = () => {
       </div>
 
       {lightboxIndex && (
-        <div className="fixed inset-0 bg-black/80 z-50 flex flex-col items-center justify-center p-4">
-          <button onClick={() => setLightboxIndex(null)} className="absolute top-5 right-5 text-white text-2xl">✕</button>
-
-          <div className="flex gap-4 items-center">
-            <button onClick={prevImage} className="text-white text-4xl ">{'<'}</button>
-            <img src={lightboxIndex.images[lightboxIndex.index]} alt="Preview" className="max-w-full max-h-[80vh] rounded-2xl shadow-lg border border-gray-200" />
-            <button onClick={nextImage} className="text-white text-4xl">{'>'}</button>
-          </div>
-        </div>
+        <Lightbox
+          lightboxIndex={lightboxIndex}
+          setLightboxIndex={setLightboxIndex}
+        />
       )}
+
     </section>
   );
 };

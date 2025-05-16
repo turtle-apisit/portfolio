@@ -51,7 +51,7 @@ const Hero = () => {
               About Me
             </a>
             <a
-              href="#preorder"
+              href="#portfolio"
               className="font-mono  px-6 py-2 rounded-full text-white border border-white hover:bg-white hover:text-black transition"
             >
               Portfolio →

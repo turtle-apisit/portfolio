@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+.my-lightbox .swiper-button-next,
+.my-lightbox .swiper-button-prev {
+  color: rgba(216, 216, 216, 0.867) ;
+  font-size: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+  }

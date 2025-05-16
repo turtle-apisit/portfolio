@@ -52,7 +52,7 @@ const About = () => {
   
      
         <a
-          href="/files/Apisit-Kulkham-CV.pdf"
+          href="/pdf/apisitk-cv.pdf"
           download
           className="font-mono inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white text-gray-700 font-semibold shadow-md ring-2 ring-gray-200 hover:ring-gray-300 hover:text-gray-700 hover:bg-gray-50 hover:scale-105 transition-all duration-300"
         >
