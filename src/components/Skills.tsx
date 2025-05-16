@@ -28,7 +28,8 @@ import {
   SiN8N,
   SiGetx,
   SiPostman,
-  SiGithub
+  SiGithub,
+  SiVercel
 } from "react-icons/si";
 
 const Skills = () => {
@@ -54,6 +55,7 @@ const Skills = () => {
     GetX: <SiGetx className="text-violet-500 w-4 h-4 shrink-0 mr-2" />,
     Postman: <SiPostman className="text-orange-500 w-4 h-4 shrink-0 mr-2" />,
     GitHub: <SiGithub className="text-black w-4 h-4 shrink-0 mr-2" />,
+    Vercel: <SiVercel className="text-black w-4 h-4 shrink-0 mr-2" />,
   };
   const skills = [
     {
@@ -84,7 +86,7 @@ const Skills = () => {
       icon: <FaCloudUploadAlt className="text-indigo-500 w-5 h-5" />,
       title: "DevOps & Deployment",
       description: "Deploying apps and automating updates using cloud services.",
-      stack: ["GCP", "GitHub Actions", "Docker"],
+      stack: ["GCP", "GitHub Actions", "Docker" , "Vercel"],
     },
     {
       icon: <FaCode className="text-gray-700 w-5 h-5" />,
