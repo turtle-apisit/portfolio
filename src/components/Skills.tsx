@@ -99,7 +99,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-24 px-6 bg-white text-gray-800">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-extrabold mb-12 tracking-tight text-center flex justify-center items-center gap-2">
+        <h2 className="text-5xl font-extrabold mb-12 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-black text-center flex justify-center items-center gap-2">
           <FaCode className="text-blue-500 drop-shadow-sm" />
           Tech Stack
         </h2>
